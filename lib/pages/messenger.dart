@@ -318,7 +318,7 @@ class _MessengerPageState extends State<MessengerPage> {
                   items: [
                     BottomNavigationBarItem(
                         icon: SvgPicture.asset("assets/icons/Tab1.svg", color: _currentIndex==0?Theme.of(context).colorScheme.onSurface:Theme.of(context).colorScheme.onError),
-                        title: Container()),
+                        label: ""),
                     BottomNavigationBarItem(
                         icon: Badge(
                           position: BadgePosition.topEnd(
@@ -335,10 +335,10 @@ class _MessengerPageState extends State<MessengerPage> {
                           ),
                           child: SvgPicture.asset("assets/icons/Tab2.svg",  color: _currentIndex==1?Theme.of(context).colorScheme.onSurface:Theme.of(context).colorScheme.onError),
                         ),
-                        title:Container()),
+                        label: ""),
                     BottomNavigationBarItem(
                         icon: SvgPicture.asset("assets/icons/Tab3.svg",  color: _currentIndex==2?Theme.of(context).colorScheme.onSurface:Theme.of(context).colorScheme.onError),
-                        title: Container()),
+                        label: ""),
                   ],
                 ),
                 Container(
